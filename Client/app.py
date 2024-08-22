@@ -16,7 +16,7 @@ HISTORY_FILE = "history.txt"
 
 @app.route('/api/query', methods=['POST'])
 def query():
-    user_info = request.json  # Get the JSON data sent from the React frontend
+    user_info = request.json  
     save_to_history(user_info)
 
     recommendations = get_supplement_recommendations(user_info)

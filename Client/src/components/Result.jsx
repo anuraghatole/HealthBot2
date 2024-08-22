@@ -12,8 +12,7 @@ const Result = () => {
       const timer = setTimeout(() => {
         setDisplayedText((prev) => prev + recommendations[currentIndex]);
         setCurrentIndex(currentIndex + 1);
-      }, 10); // Adjust the speed of typing effect here
-
+      }, 10);
       return () => clearTimeout(timer);
     }
   }, [currentIndex, recommendations]);

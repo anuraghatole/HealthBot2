@@ -22,7 +22,7 @@ const Home = () => {
         navigate("/result", { state: { recommendations: data.recommendations } });
       } else {
         console.error("Failed to fetch recommendations");
-        // Handle errors appropriately here
+
       }
     } catch (error) {
       console.error("An error occurred:", error);
